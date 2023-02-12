@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #323233;
+  --primary-light: #646464;
+}
+.icon {
+  color: var(--primary-light);
+}
+
+.shop-now{
+  background-color: white;
+}
+
+
+@layer base {
+  li{
+    @apply p-4
+  }
+  h1{
+    @apply sm:text-[20px] font-sans
+  }
+
+}
+
