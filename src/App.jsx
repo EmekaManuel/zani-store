@@ -14,18 +14,18 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <Routes>
-      <Route exact path ="/" element={<HomePage/>}/>
-      <Route  path ="/cart" element={<CartPage/>}/>
-      <Route  path ="/forgottenPassword" element={<ForgottenPassword/>}/>
-      <Route  path ="/login" element={<LoginPage/>}/>
-      <Route  path ="/shop" element={<Shop/>}/>
-      <Route  path ="/search" element={<Search/>}/>
-      <Route  path ="/signUp" element={<SignUp/>}/>
-      <Route  path ="/newsletter" element={<Newsletter/>}/>
-    </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/forgottenPassword" element={<ForgottenPassword />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+        </Routes>
+      </BrowserRouter>
     </>
 
   )
