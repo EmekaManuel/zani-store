@@ -19,7 +19,7 @@ const NavBar = () => {
   //hello worldd
 
   return (
-    <div className="flex justify-between items-center px-4 h-20">
+    <nav className="flex justify-between items-center px-4 h-20">
 
       {/* mobile menu navigation */}
 
@@ -30,7 +30,7 @@ const NavBar = () => {
       <div onClick={handleNav} className={showNav ? "absolute z-10 left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col" : "absolute left-[-100%]"}>
 
       <div className="absolute right-5 top-5">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="zani-stores" />
       </div>
 
         <ul className="mt-10">
@@ -73,7 +73,7 @@ const NavBar = () => {
         <li className={mainNavItems ? 'hidden' : 'block'} ><Link to = '/search'>search</Link></li>
         <li className="hidden md:flex"><Link to='/cart'>cart</Link></li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
