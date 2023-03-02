@@ -11,12 +11,12 @@ const Checkout = () => {
                     <img src={Logo} className="flex justify-center items-center" alt="zani-stores" />
                 </div>
 
-                <h4 className="text-center mb-4">express checkout</h4>
+                <h4 className="text-center mb-4">Express Checkout</h4>
 
                 <div className="flex flex-col  md:flex-row justify-center">
-                    <button className="bg-yellow-400 m-2 hover:bg-yellow-500 font-semibold py-2 px-10 hover:border-transparent">
+                    <button className="bg-yellow-400 m-2 hover:bg-yellow-500 font-semibold py-2 hover:border-transparent">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="5rem" height="1.5rem" viewBox="0 0 124 33" enableBackground="new 0 0 124 33" xmlSpace="preserve">
+                            width="5rem" height="1.5rem" className="m-auto" viewBox="0 0 124 33" enableBackground="new 0 0 124 33" xmlSpace="preserve">
                             <path fill="#253B80" d="M46.211,6.749h-6.839c-0.468,0-0.866,0.34-0.939,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.564,0.658
 	h3.265c0.468,0,0.866-0.34,0.939-0.803l0.746-4.73c0.072-0.463,0.471-0.803,0.938-0.803h2.165c4.505,0,7.105-2.18,7.784-6.5
 	c0.306-1.89,0.013-3.375-0.872-4.415C50.224,7.353,48.5,6.749,46.211,6.749z M47,13.154c-0.374,2.454-2.249,2.454-4.062,2.454
@@ -71,7 +71,7 @@ const Checkout = () => {
                     </button>
                     <button className="bg-gray-200 p-4 m-2 bg-transparent hover:bg-gray-300 font-semibold hover:text-white py-2 px-10 border border-transparent">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="5rem" height="1.5rem" viewBox="0 0 80 38.1" enableBackground="new 0 0 80 38.1" xmlSpace="preserve">
+                            width="5rem" height="1.5rem" className="m-auto" viewBox="0 0 80 38.1" enableBackground="new 0 0 80 38.1" xmlSpace="preserve">
                             <path fill='#5F6368' d="M37.8,19.7V29h-3V6h7.8c1.9,0,3.7,0.7,5.1,2c1.4,1.2,2.1,3,2.1,4.9c0,1.9-0.7,3.6-2.1,4.9c-1.4,1.3-3.1,2-5.1,2
 	L37.8,19.7L37.8,19.7z M37.8,8.8v8h5c1.1,0,2.2-0.4,2.9-1.2c1.6-1.5,1.6-4,0.1-5.5c0,0-0.1-0.1-0.1-0.1c-0.8-0.8-1.8-1.3-2.9-1.2
 	L37.8,8.8L37.8,8.8z"/>
@@ -98,7 +98,7 @@ const Checkout = () => {
                     <div className="flex-grow h-px bg-blue-400"></div>
 
                     {/* Text */}
-                    <span className="flex-shrink text-2xl text-gray-500 px-4 font-light">or</span>
+                    <span className="flex-shrink text-gray-500 px-4 font-light">or</span>
 
                     {/* Right line */}
                     <div className="flex-grow h-px bg-blue-400"></div>
@@ -128,6 +128,7 @@ const Checkout = () => {
                                 <option value="Belarus">Belarus</option>
                                 <option value="Nigeria">Nigeria</option>
                                 <option value="United Kingdom">United Kingdom</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 
@@ -183,16 +184,106 @@ const Checkout = () => {
                         </div>
 
                         <div className="md:flex md:justify-between">
-                            <button className="border-2 m-2 border-gray-900 text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border-gray-900">Return to Cart</button>
-                            <button className="border-2 m-2 border-black text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue Shopping</button>
+                            <button className="border-2 my-2 border-gray-900 text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border-gray-900">Return to Cart</button>
+                            <button className="border-2 my-2 border-black text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue to Shipping</button>
                         </div>
                     </form>
-
                 </div>
             </div>
 
-            <div className="cart-preview bg-gray-200 text-black flex pt-10">
-                <p>Blue part</p>
+            <div className="cart-preview bg-gray-200 text-black p-10">
+                <div className="cart-items">
+
+                    {/* What final code should look like after Redux Toolkit */}
+                    {/* {cartItems.map(({ id, productImg, productName, price, quantity, size }) => {
+                        return (
+                            <CartItem
+                                key={id}
+                                productImg={productImg}
+                                productName={productName}
+                                price={price}
+                                quantity={quantity}
+                                size={size}
+                            />
+                        )
+                    })} */}
+
+
+                    {/* Hardcoded bit to be replaced with above code */}
+                    <div className="cart-item flex flex-col mb-5 md:flex-row">
+                        <img src={Logo} alt="item" className="md:mr-10" />
+
+                        <div className="item-details mr-auto">
+                            <h3>Contemporary Sweatshirt</h3>
+                            <h5>Mulberry Brown</h5>
+                        </div>
+
+                        <div className="item-price md:ml-auto">
+                            <p>₦50,000.00</p>
+                        </div>
+                    </div>
+
+                    <div className="cart-item flex flex-col mb-5 md:flex-row">
+                        <img src={Logo} alt="item" className="md:mr-10" />
+
+                        <div className="item-details mr-auto">
+                            <h3>Contemporary Sweatshirt</h3>
+                            <h5>Mulberry Brown</h5>
+                        </div>
+
+                        <div className="item-price md:ml-auto">
+                            <p>₦50,000.00</p>
+                        </div>
+                    </div>
+
+                    <div className="cart-item flex flex-col mb-5 md:flex-row">
+                        <img src={Logo} alt="item" className="md:mr-10" />
+
+                        <div className="item-details mr-auto">
+                            <h3>Contemporary Sweatshirt</h3>
+                            <h5>Mulberry Brown</h5>
+                        </div>
+
+                        <div className="item-price md:ml-auto">
+                            <p>₦50,000.00</p>
+                        </div>
+                    </div>
+                </div>
+                {/* End of hardcoded bit to be replaced with above code */}
+
+
+
+
+                <hr className="h-0.5 bg-blue-400 mb-10" />
+
+                <div className="discount md:flex md:grid-cols-2">
+                    <input type="text" id="discount" className="mb-2 md:mr-2 bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Gift card or discount code" />
+                    <button className="mb-2 md:mx-2 border-2 border-black text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Apply</button>
+                </div>
+
+                <hr className="h-0.5 bg-blue-400 mt-10 mb-10" />
+
+                <div className="subtotal flex">
+                    <h3 className="float-left">Subtotal</h3>
+                    <p className="ml-auto">₦50,000</p>
+                </div>
+
+                <br />
+
+                <div className="delivery-fee flex">
+                    <h3 className="float-left">Delivery fee</h3>
+                    <p className="ml-auto">₦0</p>
+                </div>
+
+                <br />
+                <br />
+
+                <div className="total flex mt-5">
+                    <h3 className="float-left">Total</h3>
+                    <p className="ml-auto">₦50,000</p>
+                </div>
+
+
             </div>
         </div>
     )
