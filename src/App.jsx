@@ -9,6 +9,7 @@ import Newsletter from './Pages/Newsletter'
 import Shop from './Pages/Shop'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Checkout from './Pages/Checkout'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
     </>
