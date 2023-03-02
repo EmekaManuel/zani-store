@@ -9,23 +9,25 @@ import Newsletter from './Pages/Newsletter'
 import Shop from './Pages/Shop'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Checkout from './Pages/Checkout'
 
 function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <Routes>
-      <Route exact path ="/" element={<HomePage/>}/>
-      <Route  path ="/cart" element={<CartPage/>}/>
-      <Route  path ="/forgottenPassword" element={<ForgottenPassword/>}/>
-      <Route  path ="/login" element={<LoginPage/>}/>
-      <Route  path ="/shop" element={<Shop/>}/>
-      <Route  path ="/search" element={<Search/>}/>
-      <Route  path ="/signUp" element={<SignUp/>}/>
-      <Route  path ="/newsletter" element={<Newsletter/>}/>
-    </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/forgottenPassword" element={<ForgottenPassword />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </BrowserRouter>
     </>
 
   )

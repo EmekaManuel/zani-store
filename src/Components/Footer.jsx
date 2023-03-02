@@ -6,28 +6,28 @@ const Footer = () => {
       {/******************** our story *****************/}
       <div className=" flex pl-5 flex-col text-left md:w-1/4 md:my-10">
         <h1 className="text-[12px] text-2xl md:text-[25px] my-5">Our Story</h1>
-        <p className="md:text-[13px]">
+        <p className="md:text-[14px]">
           <p className="py-[7px]">
-            our origin story is more of an origin statement. we wanted to design
+            Our origin story is more of an origin statement. We wanted to design
             what we wanted to wear, so we did.
           </p>
 
           <p className="py-[7px]">
-            since then, that philosophy has become more about the guy we design
-            for and the impact he is looking to make. our signature pieces like
+            Since then, that philosophy has become more about the guy we design
+            for and the impact he is looking to make. Our signature pieces like
             the sureshot joggers and the flintlock tee have come to stand for
             ingenuity, creativity and a constant drive to move forward and
             beyond expectations.
           </p>
           <p className="py-[7px]">
-            we keep our impact on the environment low and out standards of
+            We keep our impact on the environment low and out standards of
             craftsmanship and customer service high.
           </p>
           <p className="py-[7px]">
-            we're for good times and even greater design and we create what you
+            We're for good times and even greater design and we create what you
             want to wear because we wear it too.
           </p>
-          <p className="py-[7px]">we are zani</p>
+          <p className="py-[7px]">We are Zani.</p>
         </p>
       </div>
       {/******************** our story ends *****************/}
@@ -38,22 +38,74 @@ const Footer = () => {
         <h1 className="text-[12px] text-2xl md:text-[25px] my-5">
           Online Store
         </h1>
-        <ul className="md:text-[13px]">
-          <p className="pb-[5px]">sureshot jogger</p>
-          <p className="pb-[5px]">flintlock tees</p>
-          <p className="pb-[5px]">sustainable products</p>
-          <p className="pb-[5px]">zani pants</p>
-          <p className="pb-[5px]">zani jogger</p>
-          <p className="pb-[5px]">zani shorts</p>
-          <p className="pb-[5px]">zani tee-shirts</p>
-          <p className="pb-[5px]">zani sale</p>
-          <p className="pb-[5px]">chinos</p>
-          <p className="pb-[5px]">denim</p>
-          <p className="pb-[5px]">joggers</p>
-          <p className="pb-[5px]">cargo pants</p>
-          <p className="pb-[5px]">hoodies</p>
-          <p className="pb-[5px]">ree grn</p>
-          <p className="pb-[5px]">gill cards</p>
+        <ul className="md:text-[14px]">
+          <a href="">
+            <p className="pb-[5px]">Sureshot Jogger</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Flintlock Tees</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Sustainable Products</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Pants</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Jogger</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Shorts</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Tee-shirts</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Sale</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Chinos</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Denim</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Joggers</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Cargo Pants</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Hoodies</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Ree Grn</p>
+
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Gill Cards</p>
+          </a>
         </ul>
       </div>
 
@@ -63,22 +115,66 @@ const Footer = () => {
 
       <div className=" flex pl-5 flex-col md:w-1/4 text-left md:my-10">
         <h1 className="text-[12px] text-2xl md:text-[25px] my-5">More Info</h1>
-        <ul className="md:text-[13px]">
-          <p className="pb-[5px]">about</p>
-          <p className="pb-[5px]"> contact us </p>
-          <p className="pb-[5px]">return policy</p>
-          <p className="pb-[5px]">submit a return request</p>
-          <p className="pb-[5px]">frequently asked questions</p>
-          <p className="pb-[5px]">shipping info</p>
-          <p className="pb-[5px]">{"technical & privacy"}</p>
-          <p className="pb-[5px]">{"sales & distribution"}</p>
-          <p className="pb-[5px]">sustainability</p>
-          <p className="pb-[5px]">site reviews</p>
-          <p className="pb-[5px]">promotions</p>
-          <p className="pb-[5px]">zani loyalty</p>
-          <p className="pb-[5px]">refer a friend</p>
-          <p className="pb-[5px]">ambassador program</p>
-          <p className="pb-[5px]">those who wear</p>
+        <ul className="md:text-[14px]">
+          <a href="">
+            <p className="pb-[5px]">About</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Contact Us </p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Return Policy</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Submit a Return Request</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Frequently AskedQuestions</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Shipping Info</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Technical & Privacy</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Sales & Distribution</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Sustainability</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Site Reviews</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Promotions</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Zani Loyalty</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Refer a Friend</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Ambassador Program</p>
+          </a>
+
+          <a href="">
+            <p className="pb-[5px]">Those Who Wear</p>
+          </a>
         </ul>
       </div>
 
@@ -88,15 +184,15 @@ const Footer = () => {
         <h1 className="text-[12px] text-2xl md:text-[25px] my-5">
           Stay Up to Date
         </h1>
-        <p className="md:text-[13px]">
-          take 10% off your order when you sign up to our newsletter plus be the
+        <p className="md:text-[14px]">
+          Take 10% off your order when you sign up to our newsletter. Plus, be the
           first to hear about new drops plus get VIP access to exclusive
           releases, restocks, sales and more.
         </p>
         <input
-          type="number"
+          type="email"
           className="bg-white relative border-2 my-3 ml-[-3px] mr-3 border-gray-900 text-gray-900 text-sm rounded only:odd:md:w-[180px] block p-2.5"
-          placeholder="enter your email"
+          placeholder="Enter your email"
         />
       </div>
     </div>
