@@ -9,8 +9,7 @@ const loginPage = () => {
       <img
         src={LoginImage}
         className="w-full hidden md:flex md:visible md:w-1/2 h-4/6 object-cover md:h-full"
-        alt=""
-        srcSet=""
+        alt="login"
       />
 
       <div className="absolute hidden md:visible bg-black bottom-[150px] rounded left-5 md:flex items-center justify-center">

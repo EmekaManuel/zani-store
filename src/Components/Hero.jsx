@@ -5,12 +5,11 @@ const Hero = () => {
   return (
 
     //********************image**********************************//
-    <div className="w-screen relative h-screen md:h-full ">
+    <div className="relative h-screen md:h-full">
       <img
         src={HeroImage}
         className="w-full h-5/6 object-cover md:h-full"
-        alt=""
-        srcSet=""
+        alt="hero"
       />
     
     {/*******************main hero *********************/}
@@ -27,7 +26,7 @@ const Hero = () => {
 
         <div className="flex mt-4 justify-center items-center mx-auto p-1 max-w-[700px] w-full"
         >
-          <button className="shop-now px-[70px] py-3 bg-white text-black rounded">shop now</button>
+          <button className="shop-now px-[70px] py-3 bg-white text-black rounded hover:bg-gray-100">Shop Now</button>
         </div>
       </div>
     </div>
