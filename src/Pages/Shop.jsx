@@ -9,7 +9,12 @@ const Shop = () => {
   return (
     <div>
       <NavBar />
-      <div className="container mx-auto px-4 mt-5">
+      <div className="container px-4 mt-5 grid grid-cols-2 ">
+
+        <div>
+          hello world
+        </div>
+
         <div className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 gap-4 flex flex-col ">
             {PRODUCTS.map((product, index) => {
               return (

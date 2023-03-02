@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { PRODUCTS } from "../../data/products";
+import NumberCounter from "../../utilities/NumberCounter";
+
 
 const productPage = () => {
   const { productID } = useParams();
@@ -21,6 +23,10 @@ const productPage = () => {
     }
   }, [productID]);
 
+  const updateQuantity = (newQuantity) => {
+    setquantity(newQuantity)
+  }
+
   if (notfound) {
     return <div>Product not found</div>;
   }
@@ -34,6 +40,7 @@ const productPage = () => {
       {product && (
         <>
           {PRODUCTS.map((product, index) => {
+            <>
             <div className="col-span-2">
               <div className="border rounded border-slate-300 flex items-center justify-center">
                 <img
@@ -45,11 +52,21 @@ const productPage = () => {
                   srcset=""
                 />
               </div>
-            </div>;
-
-            <div className="col-span-3">
-                
             </div>
+
+            <div className="col-span-3 flex flex-col justify-between">
+                <div className="product-info">
+                    <h1>{product.title}</h1>
+                    <p>{product.description}</p>
+                </div>
+            </div>
+
+            <div className="product-controls flex flex-row items-end">
+                <NumberCounter quantity={quantity} updateQuantity={updateQuantity}/>
+                <button>ADD TO CART</button>
+            </div>
+
+            </>
 
           })}
         </>

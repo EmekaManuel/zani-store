@@ -16,6 +16,8 @@ const NavBar = () => {
     setMainNavItems(!mainNavItems)
   }
 
+  //hello worldd
+
   return (
     <div className="flex justify-between items-center px-4 h-20">
 
