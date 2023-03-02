@@ -14,7 +14,7 @@ const Checkout = () => {
                 <h4 className="text-center mb-4">Express Checkout</h4>
 
                 <div className="flex flex-col  md:flex-row justify-center">
-                    <button className="bg-yellow-400 m-2 hover:bg-yellow-500 font-semibold py-2 hover:border-transparent">
+                    <button className="bg-yellow-400 m-2 hover:bg-yellow-500 font-semibold p-4 py-2 hover:border-transparent">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="5rem" height="1.5rem" className="m-auto" viewBox="0 0 124 33" enableBackground="new 0 0 124 33" xmlSpace="preserve">
                             <path fill="#253B80" d="M46.211,6.749h-6.839c-0.468,0-0.866,0.34-0.939,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.564,0.658
@@ -210,8 +210,8 @@ const Checkout = () => {
 
 
                     {/* Hardcoded bit to be replaced with above code */}
-                    <div className="cart-item flex flex-col mb-5 md:flex-row">
-                        <img src={Logo} alt="item" className="md:mr-10" />
+                    <div className="cart-item flex flex-col mb-10 md:flex-row">
+                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>
@@ -223,8 +223,8 @@ const Checkout = () => {
                         </div>
                     </div>
 
-                    <div className="cart-item flex flex-col mb-5 md:flex-row">
-                        <img src={Logo} alt="item" className="md:mr-10" />
+                    <div className="cart-item flex flex-col mb-10 md:flex-row">
+                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>
@@ -236,8 +236,8 @@ const Checkout = () => {
                         </div>
                     </div>
 
-                    <div className="cart-item flex flex-col mb-5 md:flex-row">
-                        <img src={Logo} alt="item" className="md:mr-10" />
+                    <div className="cart-item flex flex-col mb-10 md:flex-row">
+                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>
