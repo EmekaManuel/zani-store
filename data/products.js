@@ -45,15 +45,6 @@ const PRODUCTS = [
         description: "This coat has been made using 100% wool and is fully lined with a soft fleece lining. The coat has a button fastening with two front pockets and a zip pocket. This coat will be perfect for keeping warm during winter months."
     },
     {
-        id: 6,
-        title: "Black Dress",
-        category: "Dresses",
-        imgUrl: "../public/images/products/black_dress.jpg",
-        gender: "M",
-        price: "100",
-        description: "This black dress is perfect for any occasion. The high neckline and short sleeves make it easy to wear under a jacket or sweater. Wear it over your favorite tee for casual looks."
-    },
-    {
         id: 7,
         title: "Brown Coat",
         category: "Coats",
@@ -114,6 +105,15 @@ const PRODUCTS = [
         imgUrl: "../public/images/products/green_shirt(men).jpg",
         gender: "M",
         price: "400",
+        description: "This black dress is perfect for any occasion. The high neckline and short sleeves make it easy to wear under a jacket or sweater. Wear it over your favorite tee for casual looks."
+    },
+    {
+        id: 6,
+        title: "Black Dress",
+        category: "Dresses",
+        imgUrl: "../public/images/products/black_dress.jpg",
+        gender: "M",
+        price: "100",
         description: "This black dress is perfect for any occasion. The high neckline and short sleeves make it easy to wear under a jacket or sweater. Wear it over your favorite tee for casual looks."
     },
     {

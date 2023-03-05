@@ -56,10 +56,11 @@ const NavBar = () => {
       {/* /*************** end of mobile menu nav ********************/}
 
       <ul className="hidden md:flex">
-        <li>shop</li>
-        <li>brand</li>
-        <li>saved</li>
-        <li>bundles</li>
+        <li> <Link to ="/shop" >Shop</Link> </li>
+        <li> <Link to ="/brand" >Brand</Link> </li>
+        <li> <Link to ="/saved" >Saved</Link> </li>
+        <li> <Link to ="/bundles" >Bundles</Link> </li>
+  
       </ul>
 
       <div className="flex">

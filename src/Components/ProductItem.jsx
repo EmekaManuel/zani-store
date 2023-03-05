@@ -1,21 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const ProductItem = ({ name, imageUrl, price }) => {
   return (
-    <div className="w-full border border-slate-400">
-      <div className="flex items-center justify-center">
+    <div className="max-w-[250px] relative border border-gray-200 rounded-lg shadow  ">
+      <div className=" p-8 h-[270px] ">
         <img
           src={imageUrl}
-          objectfit="cover"
           alt=""
           srcset=""
-          className='md:h-[350px] md:w-[270px] h-[270px] w-[230px] object-contain'
-        />
+          className="object-fit-contain h-full rounded-t-lg w-full"
+          objectFit="cover" />
       </div>
-      <p className='mt-2 pl-[50px] text-lg font-semibold text-left'>{name}</p>
-      <p className='mt-2 pl-[50px] pb-5 text-lg font-semibold text-left'>{price}</p>
+      <div>
+        <p className="absolute top-2 px-4 text-[13px] left-2 font-mono bg-gray-900 text-white">new</p>
+      </div>
+      <div className=" px-2 pb-5 flex flex-row justify-between">
+        <p className="font-sm text-[15px] font-mono tracking-tight text-gray-900 ">{name}</p>
+        <span className="text-[15px] font-bold text-gray-900">${price}</span>
+      </div>
+      <div className="px-5  py-3 text-center text-white w-full rounded-b-lg hover:bg-gray-700 font-thin text-sm focus:ring-4 focus:outline-none bg-gray-600">
+        <button className="">Add To Cart</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductItem
+export default ProductItem;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Checkout = () => {
     return (
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full gap-0 flex-col-reverse md:flex-row">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full gap-0  md:flex-row">
 
             <div className="checkout-form p-10">
                 <div className="flex justify-center items-center mb-4">
@@ -184,7 +184,7 @@ const Checkout = () => {
                         </div>
 
                         <div className="md:flex md:justify-between">
-                            <button className="border-2 my-2 border-gray-900 text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border-gray-900">Return to Cart</button>
+                            <button className="border-2 my-2 text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border-gray-900">Return to Cart</button>
                             <button className="border-2 my-2 border-black text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm w-full sm:w-auto px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue to Shipping</button>
                         </div>
                     </form>
