@@ -2,13 +2,13 @@ import React from "react";
 
 const ProductItem = ({ name, imageUrl, price }) => {
   return (
-    <div className="max-w-[250px] relative border border-gray-200 rounded-lg shadow  ">
-      <div className=" p-8 h-[270px] ">
+    <div className="md:max-w-[250px] relative border border-gray-200 rounded-lg shadow  ">
+      <div className=" md:p-8 md:h-[270px] ">
         <img
           src={imageUrl}
           alt=""
           srcset=""
-          className="object-fit-contain h-full rounded-t-lg w-full"
+          className="md:object-fit-contain md:h-full rounded-t-lg md:w-full"
           objectFit="cover" />
       </div>
       <div>
@@ -18,7 +18,8 @@ const ProductItem = ({ name, imageUrl, price }) => {
         <p className="font-sm text-[15px] font-mono tracking-tight text-gray-900 ">{name}</p>
         <span className="text-[15px] font-bold text-gray-900">${price}</span>
       </div>
-      <div className="px-5  py-3 text-center text-white w-full rounded-b-lg hover:bg-gray-700 font-thin text-sm focus:ring-4 focus:outline-none bg-gray-600">
+      <div className="px-5  py-3 text-center text-white w-full rounded-b-lg 
+      hover:bg-gray-700 font-thin text-sm focus:ring-4 focus:outline-none bg-gray-700">
         <button className="">Add To Cart</button>
       </div>
     </div>

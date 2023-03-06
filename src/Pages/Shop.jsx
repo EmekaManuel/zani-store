@@ -16,10 +16,10 @@ const Shop = () => {
           <p className="  mx-auto ">shop at discounted prices</p>
         </div>
         {/****************************** medium screens **********************************************/}
-        <div className="md:flex  mt-3 ">
+        <div className="flex md:flex-row justify-between flex-col  mt-3 ">
           {/*********************** *filters ****************************************/}
 
-          <div className="md:w-1/4  mr-5 ">
+          <div className="md:w-1/5">
             <h2 className="text-md font-medium"> Filter Products</h2>
             <ul className="mt-4 flex flex-col space-y-2">
               <li className="text-sm flex border-b-2 border-gray-800 justify-between  items-center ">
@@ -90,10 +90,11 @@ const Shop = () => {
 
           {/*********************** *main page ****************************************/}
 
-          <div className="md:w-3/4 w-full">
+          <div className="lg:w-3/4 md:w-3/4">
             <div className="flex">
               <div
-                className="container mx-auto space-y-2 lg:space-y-0 lg:gap-5 lg:grid lg:grid-cols-4 grid-cols-2"
+                className="container space-y-2 md:grid-cols-2 lg:space-y-0 
+                lg:gap-5 lg:grid lg:grid-cols-4"
               >
                 {PRODUCTS.map((product, index) => {
                   return (
