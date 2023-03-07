@@ -2,13 +2,14 @@ import React from "react";
 
 const ProductItem = ({ name, imageUrl, price }) => {
   return (
-    <div className="md:max-w-[250px] relative border border-gray-200 rounded-lg shadow  ">
-      <div className=" md:p-8 md:h-[270px] ">
+    <div className="max-w-[250px] relative border border-gray-200 rounded-lg shadow  ">
+      <div className="p-8 h-[270px] ">
         <img
           src={imageUrl}
           alt=""
           srcset=""
-          className="md:object-fit-contain md:h-full rounded-t-lg md:w-full"
+          
+          className="object-fit-contain h-full rounded-t-lg w-full"
           objectFit="cover" />
       </div>
       <div>

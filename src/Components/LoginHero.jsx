@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const loginPage = () => {
   return (
     //********************image**********************************//
-    <div className="w-screen relative md:flex md:flex-row h-[screen] md:h-full xl:h-[700px] my-[70px] md:mt-[10px] ">
+    <div className="w-screen relative md:flex md:flex-row h-[screen] md:h-screen xl:h-[700px] my-[70px] md:mt-[10px] ">
       <img
         src={LoginImage}
-        className="w-full hidden md:flex md:visible md:w-1/2 h-4/6 object-cover md:h-full"
+        className="w-full hidden md:flex md:visible md:w-1/2 h-4/6 object-cover md:h-screen"
         alt="login"
       />
 
@@ -53,14 +53,14 @@ const loginPage = () => {
           </p>
         </div>
 
-        <div className="flex text-center md:flex-row md:space-x-[70px] md:pt-7 flex-col sm:space-y-[10px]">
+        <div className="flex col-span-6 justify-between">
           <p>
             {" "}
-            <Link to="/signUp">create account</Link>{" "}
+            <Link to="/signUp">create an account</Link>{" "}
           </p>
           <p>
             {" "}
-            <Link to="/">return to store</Link>{" "}
+            <Link to="/store">return to store</Link>{" "}
           </p>
         </div>
       </div>

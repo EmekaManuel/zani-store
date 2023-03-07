@@ -118,7 +118,7 @@ const PRODUCTS = [
     },
     {
         id: 14,
-        title: "Navy Jogger Pants",
+        title: "Navy Jogger ",
         category: "Pants",
         imgUrl: "../public/images/products/navy_jogger_patn(men).jpg",
         gender: "M",
@@ -181,7 +181,7 @@ const PRODUCTS = [
     },
     {
         id: 21,
-        title: "White Blouse",
+        title: "Creme Blouse",
         category: "Blouses",
         imgUrl: "../public/images/products/white_blouse(1).jpg",
         gender: "F",
@@ -190,7 +190,7 @@ const PRODUCTS = [
     },
     {
         id: 22,
-        title: "White Blouse Long",
+        title: "White Blouse",
         category: "Blouses",
         imgUrl: "../public/images/products/white_blouse.jpg",
         gender: "F",

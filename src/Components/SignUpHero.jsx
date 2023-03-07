@@ -23,7 +23,7 @@ const signUpHero = () => {
    {/*******************main hero *********************/}
    <div className="relative md:relative top-[10px] md:top-[10px] xl:top-[100px] w-full md:w-1/2 h-full flex flex-col text-center p-6 ">
      
-     <div className='flex text-center justify-center'>sign up</div>
+     <div className='flex text-center justify-center'>create an account</div>
      
      <div className="flex mt-4  bg-white border-2 border-gray-700 mx-auto p-1 xl:max-w-[600px] w-full">
        <input

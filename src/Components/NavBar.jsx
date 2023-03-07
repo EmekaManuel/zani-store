@@ -11,6 +11,12 @@ const NavBar = () => {
   const [showNav, setShowNav] = useState(false)
   const [mainNavItems, setMainNavItems] = useState(false)
 
+  const [showSearch, setShowSearch] = useState(false)
+
+  const handleSearch = () => {
+    setShowSearch(!showSearch)
+  }
+
   const handleNav = () => {
     setShowNav(!showNav)
     setMainNavItems(!mainNavItems)
@@ -29,7 +35,7 @@ const NavBar = () => {
 
       <div onClick={handleNav} className={showNav ? "absolute z-10 left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col" : "absolute left-[-100%]"}>
 
-      <div className="absolute right-5 top-5">
+      <div className="absolute  right-5 top-5">
         <img src={Logo} alt="zani-stores" />
       </div>
 
@@ -71,7 +77,7 @@ const NavBar = () => {
 
       <ul className="flex">
         <li className="hidden md:flex"><Link to = '/login'>account</Link></li>
-        <li className={mainNavItems ? 'hidden' : 'block'} ><Link to = '/search'>search</Link></li>
+        <li className={mainNavItems ? 'hidden' : 'block'} onClick={handleSearch} >search</li>
         <li className="hidden md:flex"><Link to='/cart'>cart</Link></li>
       </ul>
     </nav>

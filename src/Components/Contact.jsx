@@ -26,7 +26,7 @@ const Contact = () => {
       </div>
 
       <div className="flex justify-center text-center">
-        <p className="bg-black text-white xl:px-[265px] xl:py-[10px] px-[120px] py-[10px] md:py-[10px] md:px-[264px] hover:bg-gray-900 cursor-pointer">Subscribe</p>
+        <p className="bg-black text-white xl:px-[265px] xl:py-[10px] px-[150px] py-[10px] md:py-[10px] md:px-[273px] hover:bg-gray-900 cursor-pointer">Subscribe</p>
       </div>
     </div>
   );
