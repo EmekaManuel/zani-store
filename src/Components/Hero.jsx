@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="relative h-screen md:h-full">
       <img
         src={HeroImage}
-        className="w-full h-5/6 object-cover md:h-full"
+        className="w-full h-5/6 object-cover md:h-screen"
         alt="hero"
       />
     
@@ -17,11 +17,11 @@ const Hero = () => {
         
         <h1 className="text-[35px] md:text-[60px] heroTopic  p-5 md:p-2">new season arrivals</h1>
         <h1 className=" hero-paragraph opacity-75 text-[20px]">
-          Lorem ipsum dolor sit amet consectetur 
+           Welcome To Zani Luxury Stores. 
           <br />
-          Lorem ipsum dolor sit amet consec
+          Home To All Luxury Clothing
           <br />
-          Lorem ipsum dolor sit amet 
+           you Deserve.
         </h1>
 
         <div className="flex mt-4 justify-center items-center mx-auto p-1 max-w-[700px] w-full">
