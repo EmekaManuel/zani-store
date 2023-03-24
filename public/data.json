@@ -6,11 +6,15 @@
         "isNew": true,
         "category": "male",
         "image": "https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "tags": ["new", "luxury", "men"]
+        "tags": ["new", "luxury", "men"],
+        "subImage1": "https://images.pexels.com/photos/3317434/pexels-photo-3317434.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "subImage2": "https://images.pexels.com/photos/2075673/pexels-photo-2075673.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "subImage3": "https://images.pexels.com/photos/2883564/pexels-photo-2883564.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+
       },
       {
         "id": 2,
-        "name": "White Maxilain Shirt",
+        "name": "Maxiliin Shirt",
         "isNew": true,
         "price": "300",
         "category": "male",

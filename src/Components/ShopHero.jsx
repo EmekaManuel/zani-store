@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import ProductContainer from "./ProductContainer";
+import { NavLink } from "react-router-dom";
 
 const ShopHero = () => {
   //fetching the data from the json file
@@ -114,6 +115,7 @@ const ShopHero = () => {
 
       <div className="right w-4/5">
         <div className="grid md:grid-cols-4 w-[100%] gap-5">
+          
           <ProductContainer filterData = {currentView} />
         
         </div>

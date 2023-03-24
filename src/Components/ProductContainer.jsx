@@ -1,10 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
 const ProductContainer = ({ filterData }) => {
   return (
     <>
       {filterData.map((product) => {
         return (
+          <Link to = {`/shop/${product.id}`} key={product.id}>
+
           <div
             className='"max-w-[250px] pb-5 relative border border-gray-200 rounded-lg shadow '
             key={product.id}
@@ -36,6 +40,8 @@ const ProductContainer = ({ filterData }) => {
               </div>
             </div>
           </div>
+          </Link>
+
         );
       })}
     </>
