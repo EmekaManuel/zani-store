@@ -1,4 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-hot-toast";
+
+
+const notifyAddedToCart = () => toast.success(
+  <span>
+      1 item added to cart.
+  </span>
+)
+
+const notifyRemovedFromCart = () => toast.error(
+  <span>
+      Item removed from cart.
+  </span>
+)
 
 const initialState = {
   cartItems: [],
@@ -21,6 +35,8 @@ const cartSlice = createSlice({
       }
       state.cartTotalAmount += parseInt(action.payload.price);
       state.cartTotalProducts = state.cartItems.length;
+      notifyAddedToCart();
+
     },
 
     incrementQuantity: (state, action) => {
@@ -49,6 +65,8 @@ const cartSlice = createSlice({
       state.cartTotalAmount -=
         action.payload.price * action.payload.quantity;
       state.cartTotalProducts = state.cartItems.length;
+      notifyRemovedFromCart();
+
     },
     clearCart: (state) => {
       state.cartItems = [];

@@ -8,6 +8,7 @@ import { BsChevronRight } from "react-icons/bs";
 import productsData from "/src/data.json";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import {  Toaster } from "react-hot-toast";
 
 // redux part
 import { useDispatch } from "react-redux";
@@ -44,6 +45,7 @@ const SingleProduct = () => {
   return (
     <>
       <NavBar />
+      <Toaster/>
       {/* //images */}
       <div className="flex md:flex-row flex-col px-5  justify-around py-10 ">
         <div className="md:w-1/2 ">
