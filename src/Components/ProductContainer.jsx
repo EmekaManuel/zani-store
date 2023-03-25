@@ -10,7 +10,7 @@ const ProductContainer = ({ filterData }) => {
           <Link to = {`/shop/${product.id}`} key={product.id}>
 
           <div
-            className='"max-w-[250px] pb-5 relative border border-gray-200 rounded-lg shadow '
+            className='"max-w-[250px] pb-5 relative rounded-lg shadow-sm '
             key={product.id}
           >
             <div>
@@ -26,10 +26,10 @@ const ProductContainer = ({ filterData }) => {
                 </div>
               </div>
               <div>
-                <p className="absolute top-2 px-4 text-[13px] left-2 font-mono bg-gray-900 text-white">
+                <p className="absolute top-2 px-4 text-[13px] left-2 bg-black font-mono text-white">
                   new
                 </p>
-                <div className=" px-2 pt-5 flex flex-row justify-between">
+                <div className=" px-2 pt-5 flex flex-col space-y-2">
                   <p className="font-sm text-[15px] font-mono tracking-tight text-gray-900 ">
                     {product.name}
                   </p>

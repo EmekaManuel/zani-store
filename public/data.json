@@ -18,7 +18,7 @@
         "isNew": true,
         "price": "300",
         "category": "male",
-        "image": "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "image": "https://images.pexels.com/photos/1129019/pexels-photo-1129019.jpeg?auto=compress&cs=tinysrgb&w=800",
         "tags": ["new", "luxury", "men"]
       },
       {
@@ -27,7 +27,7 @@
         "isNew": true,
         "price": "260",
         "category": "male",
-        "image": "https://images.pexels.com/photos/4925796/pexels-photo-4925796.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "image":"https://images.pexels.com/photos/15937631/pexels-photo-15937631.jpeg?auto=compress&cs=tinysrgb&w=800",
         "tags": ["new", "luxury", "men"]
       },
       {

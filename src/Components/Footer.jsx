@@ -1,7 +1,9 @@
 import React from "react";
+import { BsFacebook, BsGoogle, BsInstagram, BsPinterest, BsSpotify, BsTwitch, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
+    <>
     <div className="flex justify-center flex-col md:flex-row mx-5 mb-3 md:mb-0">
       {/******************** our story *****************/}
       <div className=" flex pl-5 flex-col text-left md:w-1/4 md:my-10">
@@ -194,8 +196,26 @@ const Footer = () => {
           className="bg-white relative border-2 my-3 ml-[-3px] mr-3 border-gray-900 text-gray-900 text-sm rounded only:odd:md:w-[180px] block p-2.5"
           placeholder="Enter your email"
         />
+        <p className="bg-black p-2 text-center my-3 ml-[-3px] mr-3 justify-center  rounded only:odd:md:w-[180px] block text-white">send</p>
       </div>
+
+
     </div>
+      <div className="flex justify-start flex-col md:flex-row mx-5 pb-5 md:mb-0">
+        <span className="pl-5 gap-x-5 flex">
+
+        <BsGoogle/>
+        <BsFacebook/>
+        <BsInstagram/>
+        <BsTwitter/>
+        <BsSpotify/>
+        <BsPinterest/>
+        <BsTwitch/>
+        </span>
+
+
+      </div>
+    </>
   );
 };
 

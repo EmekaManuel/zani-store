@@ -1,6 +1,6 @@
 import React from 'react'
-import Contact from '../Components/Contact'
-import Footer from '../Components/Footer'
+// import Contact from '../Components/Contact'
+// import Footer from '../Components/Footer'
 import NavBar from '../Components/NavBar'
 import SingleProduct from '../Components/SingleProduct'
 const SingleProduct = () => {
@@ -8,8 +8,6 @@ const SingleProduct = () => {
     <div>
         <NavBar/>
         <SingleProduct/>
-        <Contact/>
-        <Footer/>
     </div>
   )
 }
