@@ -1,6 +1,6 @@
 import { React } from "react";
 import HomePage from "./Pages/HomePage";
-import CartPage from "./Pages/cartPage";
+import CartPage from "./Pages/CartPage";
 import LoginPage from "./Pages/LoginPage";
 import Search from "./Pages/searchPage";
 import ForgottenPassword from "./Pages/ForgotPassword";
