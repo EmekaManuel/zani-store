@@ -42,11 +42,11 @@ const ShopHero = () => {
     <div className="flex flex-row justify-center mx-auto my-10 max-w-[89%] ">
       {/* ///////////////// left nav ///////////////////// */}
 
-      <div className="left w-1/5 static pt-5 flex-1 hidden md:flex ">
+      <div className="left w-1/5 static pt-5 flex-1 hidden lg:flex ">
         <div className="">
           <h2 className="text-md font-medium"> Filter Products</h2>
           <ul className="mt-4 flex flex-col ">
-            <li className="text-[13px] min-w-[180px] max-w-[180px] flex border-b-2  border-gray-800 items-center  justify-between text-center">
+            <li className="text-[13px] lg:max-w-[180px] flex border-b-2  border-gray-800 items-center  justify-between text-center">
               <p>Low Price </p>
               <span>
                 {" "}

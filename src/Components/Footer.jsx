@@ -202,7 +202,7 @@ const Footer = () => {
 
     </div>
       <div className="flex justify-start flex-col md:flex-row mx-5 pb-5 md:mb-0">
-        <span className="pl-5 gap-x-5 flex">
+        <span className="pl-5 gap-x-5 pb-4 flex">
 
         <BsGoogle/>
         <BsFacebook/>

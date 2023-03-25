@@ -38,7 +38,7 @@ const Reviews = () => {
         {/* details */}
       <div className="justify-between pt-5 flex mx-5">
         <span className="pl-3 flex flex-row gap-x-5">
-          <div>
+        <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
             <img src={Image1} alt="" />{" "}
           </div>
@@ -69,12 +69,12 @@ const Reviews = () => {
         </span>
 
         {/* date */}
-        <span className="text-sm text-gray-500 pr-3">06 Oct, 2022</span>
+        <span className="text-sm hidden md:flex text-gray-500 pr-3">06 Oct, 2022</span>
       </div>
         {/* details */}
       <div className="justify-between pt-5 flex mx-5">
         <span className="pl-3 flex flex-row gap-x-5">
-          <div>
+          <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
             <img src={Image2} alt="" />{" "}
           </div>
@@ -105,12 +105,12 @@ const Reviews = () => {
         </span>
 
         {/* date */}
-        <span className="text-sm text-gray-500 pr-3">06 Oct, 2022</span>
+        <span className="text-sm hidden md:flex text-gray-500 pr-3">06 Oct, 2022</span>
       </div>
         {/* details */}
       <div className="justify-between pt-5 flex mx-5">
         <span className="pl-3 flex flex-row gap-x-5">
-          <div>
+        <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
             <img src={Image3} alt="" />{" "}
           </div>
@@ -141,7 +141,7 @@ const Reviews = () => {
         </span>
 
         {/* date */}
-        <span className="text-sm text-gray-500 pr-3">06 Oct, 2022</span>
+        <span className="text-sm hidden md:flex text-gray-500 pr-3">06 Oct, 2022</span>
       </div>
     </div>
   );

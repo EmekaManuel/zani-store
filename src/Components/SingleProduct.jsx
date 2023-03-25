@@ -8,7 +8,8 @@ import { BsChevronRight } from "react-icons/bs";
 import productsData from "/src/data.json";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import {  Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 // redux part
 import { useDispatch } from "react-redux";
@@ -45,7 +46,7 @@ const SingleProduct = () => {
   return (
     <>
       <NavBar />
-      <Toaster/>
+      <Toaster />
       {/* //images */}
       <div className="flex md:flex-row flex-col px-5  justify-around py-10 ">
         <div className="md:w-1/2 ">
@@ -144,18 +145,20 @@ const SingleProduct = () => {
             <div className="buttons flex gap-y-2 flex-col pt-5">
               <div className="">
                 {" "}
-                <button className="bg-gray-900 py-1 text-white w-full">
-                  buy
+                <button
+                  className="bg-gray-900 py-1 text-white w-full"
+                  onClick={() => dispatch(addToCart(product))}
+                >
+                  add to cart
                 </button>{" "}
               </div>
               <div className="">
                 {" "}
-                <button
-                  onClick={() => dispatch(addToCart(product))}
-                  className="bg-white py-1 border-black border text-gray-900 w-full"
-                >
-                  add to cart
+                <Link to = "/shop">
+                <button className="bg-white py-1 border-black border text-gray-900 w-full">
+                  back to store
                 </button>{" "}
+                </Link>
               </div>
             </div>
             <div className="extras pt-5">
@@ -163,9 +166,12 @@ const SingleProduct = () => {
                 <span className="flex justify-between">
                   <p>description</p>
                   <p>
-                  { 
-                      description ? <BsChevronDown onClick={showDDescription}/> : <BsChevronRight onClick={showDDescription} />
-                    }                  </p>
+                    {description ? (
+                      <BsChevronDown onClick={showDDescription} />
+                    ) : (
+                      <BsChevronRight onClick={showDDescription} />
+                    )}{" "}
+                  </p>
                 </span>
                 <span>
                   {description && (
@@ -180,9 +186,12 @@ const SingleProduct = () => {
                 <span className="flex justify-between">
                   <p>sizing</p>
                   <p>
-                  { 
-                      showSizing ? <BsChevronDown onClick={showSize}/> : <BsChevronRight onClick={showSize} />
-                    }                  </p>
+                    {showSizing ? (
+                      <BsChevronDown onClick={showSize} />
+                    ) : (
+                      <BsChevronRight onClick={showSize} />
+                    )}{" "}
+                  </p>
                 </span>
                 <span>
                   {showSizing && (
@@ -197,9 +206,12 @@ const SingleProduct = () => {
                 <span className="flex justify-between">
                   <p>free shipping</p>
                   <p>
-                  { 
-                      showShipping ? <BsChevronDown onClick={showShippingInfo}/> : <BsChevronRight onClick={showShippingInfo} />
-                    }                  </p>
+                    {showShipping ? (
+                      <BsChevronDown onClick={showShippingInfo} />
+                    ) : (
+                      <BsChevronRight onClick={showShippingInfo} />
+                    )}{" "}
+                  </p>
                 </span>
                 <span>
                   {showShipping && (
@@ -216,27 +228,28 @@ const SingleProduct = () => {
                 <span className="flex justify-between">
                   <p>return policy</p>
                   <p>
-                     { 
-                      returnPolicy ? <BsChevronDown onClick={showReturnPolicy}/> : <BsChevronRight onClick={showReturnPolicy} />
-                    }
+                    {returnPolicy ? (
+                      <BsChevronDown onClick={showReturnPolicy} />
+                    ) : (
+                      <BsChevronRight onClick={showReturnPolicy} />
+                    )}
                   </p>
                 </span>
                 <span>
                   {returnPolicy && (
                     <p className=" pt-2 px-2 text-slate-500 ">
-                      This product and all products are returnable within the first 2 weeks after purchase.
+                      This product and all products are returnable within the
+                      first 2 weeks after purchase.
                     </p>
                   )}
                 </span>
               </span>
-
-
             </div>
           </div>
         </div>
       </div>
 
-      <Reviews/>
+      <Reviews />
       <Contact />
       <Footer />
     </>

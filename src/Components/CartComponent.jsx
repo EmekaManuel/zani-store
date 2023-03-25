@@ -46,12 +46,12 @@ const CartComponent = () => {
           <>
             {cartItems.map((cartItem) => (
               <div className="flex border-b-2 py-6 border-b-sky-300  justify-between ">
-                <div className="pl-5 flex space-x-5 flex-row">
-                  <div className=" max-w-[200px]  ">
+                <div className="pl-5 flex space-x-5 md:flex-row ">
+                  <div className=" md:max-w-[200px] max-w-[50px] ">
                     {" "}
                     <img
                       src={cartItem.subImage2}
-                      className="min-h-[200px] w-[150px] "
+                      className=""
                       alt=""
                     />{" "}
                   </div>
