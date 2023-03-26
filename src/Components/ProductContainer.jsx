@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProductContainer = ({ filterData }) => {
   return (
@@ -16,7 +16,7 @@ const ProductContainer = ({ filterData }) => {
             <div>
               <div className="flex flex-col">
                 <div className="h-[350px] lg:h-[350px] md:h-[270px]">
-                  <img
+                  <LazyLoadImage
                     src={product.image}
                     alt=""
                     srcset=""

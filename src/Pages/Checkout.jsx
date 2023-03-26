@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/Logo.png'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Checkout = () => {
     return (
@@ -8,7 +9,7 @@ const Checkout = () => {
 
             <div className="checkout-form p-10">
                 <div className="flex justify-center items-center mb-4">
-                    <img src={Logo} className="flex justify-center items-center" alt="zani-stores" />
+                    <LazyLoadImage src={Logo} className="flex justify-center items-center" alt="zani-stores" />
                 </div>
 
                 <h4 className="text-center mb-4">Express Checkout</h4>
@@ -211,7 +212,7 @@ const Checkout = () => {
 
                     {/* Hardcoded bit to be replaced with above code */}
                     <div className="cart-item flex flex-col mb-10 md:flex-row">
-                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
+                        <LazyLoadImage src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>
@@ -224,7 +225,7 @@ const Checkout = () => {
                     </div>
 
                     <div className="cart-item flex flex-col mb-10 md:flex-row">
-                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
+                        <LazyLoadImage src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>
@@ -237,7 +238,7 @@ const Checkout = () => {
                     </div>
 
                     <div className="cart-item flex flex-col mb-10 md:flex-row">
-                        <img src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
+                        <LazyLoadImage src={Logo} alt="item" className="h-max w-max md:h-max md:w-max md:mr-10" />
 
                         <div className="item-details mr-auto">
                             <h3>Contemporary Sweatshirt</h3>

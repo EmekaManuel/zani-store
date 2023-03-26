@@ -3,7 +3,7 @@ import SearchImage from "../assets/Rectangle 2.png";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const SearchHero = () => {
 
   const [search, setSearch] = useState("")
@@ -11,7 +11,7 @@ const SearchHero = () => {
   return (
     //********************image**********************************//
     <div className="w-screen relative md:flex md:flex-row h-[screen] mt-[50px] md:h-full xl:h-[700px] ">
-      <img
+      <LazyLoadImage
         src={SearchImage}
         className="w-full md:w-1/2 h-4/6 object-cover md:h-full"
         alt=""

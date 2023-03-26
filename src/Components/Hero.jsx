@@ -1,15 +1,17 @@
 import React from "react";
 import HeroImage from "../assets/Rectangle 1.png";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Hero = () => {
   return (
 
     //********************image**********************************//
     <div className="relative h-screen md:h-full">
-      <img
+      <LazyLoadImage
         src={HeroImage}
         className="w-full h-5/6 object-cover md:h-screen"
         alt="hero"
+        width='1200px'
       />
     
     {/*******************main hero *********************/}

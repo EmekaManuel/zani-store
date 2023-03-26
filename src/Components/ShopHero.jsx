@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import ProductContainer from "./ProductContainer";
-import { NavLink } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
 
 const ShopHero = () => {

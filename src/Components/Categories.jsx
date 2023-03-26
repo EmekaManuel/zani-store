@@ -4,7 +4,7 @@ import Image2 from "../assets/Frame 6 (1).png";
 import Image3 from "../assets/Frame 9 (1).png";
 import MiddleImage from "../assets/middle section.png";
 import MiddleImage2 from '../assets/Rectangle 737.png'
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Categories = () => {
   return (
 
@@ -20,7 +20,7 @@ const Categories = () => {
       <div className="row md:flex my-10 md:space-x-3 md:mt-0 md:justify-center md:mx-auto ">
         <div className="md:w-1/4 ">
           <div className="relative">
-            <img src={Image2} className="w-full" alt="" srcset="" />
+            <LazyLoadImage src={Image2} className="w-full" alt="" srcset="" />
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-white font-medium">Coats</p>
               <div className="absolute md:hidden bg-black top-[-10px] rounded left-5 flex items-center justify-center">
@@ -34,7 +34,7 @@ const Categories = () => {
 
         <div className="md:w-1/4 my-10 md:my-0">
           <div className="relative">
-            <img src={Image} className="w-screen" alt="" srcset="" />
+            <LazyLoadImage src={Image} className="w-screen" alt="" srcset="" />
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-white font-medium">Pants</p>
             </div>
@@ -44,7 +44,7 @@ const Categories = () => {
 
         <div className="md:w-1/4">
           <div className="relative">
-            <img src={Image3} className="w-screen" alt="" srcset="" />
+            <LazyLoadImage src={Image3} className="w-screen" alt="" srcset="" />
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-white font-medium">Women</p>
             </div>
@@ -60,7 +60,7 @@ const Categories = () => {
       <div className="hidden row md:flex my-10 md:mt-0 md:justify-center md:mx-auto ">
         <div className="md:w-[78%]">
           <div className="relative">
-            <img src={MiddleImage} className="w-screen" alt="" srcset="" />
+            <LazyLoadImage src={MiddleImage} className="w-screen" alt="" srcset="" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-white text-[35px] md:text-[40px]">
                 the zani lookbook
@@ -80,7 +80,7 @@ const Categories = () => {
       <div className=" row md:hidden my-5 md:mt-0 md:justify-center md:mx-auto ">
         <div className="md:w-[77%]">
           <div className="relative">
-            <img src={MiddleImage2} className="w-screen" alt="" srcset="" />
+            <LazyLoadImage src={MiddleImage2} className="w-screen" alt="" srcset="" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-white text-[35px] md:text-[40px]">
                 the zani lookbook

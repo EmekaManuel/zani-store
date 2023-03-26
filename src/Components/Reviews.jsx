@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 import Image1 from "../assets/reviews/reviews/Ellipse 1 (1).png";
 import Image2 from "../assets/reviews/reviews/Ellipse 1 (2).png";
 import Image3 from "../assets/reviews/reviews/Ellipse 1 (3).png";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Reviews = () => {
   return (
     <div className="mx-auto flex  flex-col  mb-8">
@@ -40,7 +40,7 @@ const Reviews = () => {
         <span className="pl-3 flex flex-row gap-x-5">
         <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
-            <img src={Image1} alt="" />{" "}
+            <LazyLoadImage src={Image1} alt="" />{" "}
           </div>
 
           <div className="flex flex-col space-y-3 max-w-[602px]">
@@ -76,7 +76,7 @@ const Reviews = () => {
         <span className="pl-3 flex flex-row gap-x-5">
           <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
-            <img src={Image2} alt="" />{" "}
+            <LazyLoadImage src={Image2} alt="" />{" "}
           </div>
 
           <div className="flex flex-col space-y-3 max-w-[602px]">
@@ -112,7 +112,7 @@ const Reviews = () => {
         <span className="pl-3 flex flex-row gap-x-5">
         <div className="hidden lg:max-h-[70px] max-w-[80px] md:flex">
             {" "}
-            <img src={Image3} alt="" />{" "}
+            <LazyLoadImage src={Image3} alt="" />{" "}
           </div>
 
           <div className="flex flex-col space-y-3 max-w-[602px]">

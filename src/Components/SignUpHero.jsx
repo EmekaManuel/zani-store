@@ -2,12 +2,13 @@ import React from 'react'
 import SignUpImage from '../assets/Rectangle 3.png'
 
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const signUpHero = () => {
   return (
    //********************image**********************************//
    <div className="w-screen relative md:flex md:flex-row h-[screen] md:h-full xl:h-[700px] my-[70px] md:mt-[10px] ">
-   <img
+   <LazyLoadImage
      src={SignUpImage}
      className="w-full hidden md:flex md:visible md:w-1/2 h-4/6 object-cover md:h-full"
      alt=""

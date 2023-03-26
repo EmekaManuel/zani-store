@@ -13,6 +13,7 @@ import {
   removeItem,
   clearCart,
 } from "../Redux/cartSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CartComponent = () => {
   const cartItems = useSelector((state) => state.cartItems);
@@ -49,7 +50,7 @@ const CartComponent = () => {
                 <div className="pl-5 flex space-x-5 md:flex-row ">
                   <div className=" md:max-w-[200px] max-w-[50px] ">
                     {" "}
-                    <img src={cartItem.subImage2} className="" alt="" />{" "}
+                    <LazyLoadImage src={cartItem.subImage2} className="" alt="" />{" "}
                   </div>
                   <div className="min-w-[270px] space-y-4 ">
                     <p className="text-2xl font-medium">{cartItem.name} </p>
@@ -145,9 +146,12 @@ const CartComponent = () => {
             </div>
 
             <div className="flex justify-center min-w-[200px] items-center">
+              <Link to = "/checkout">
+              
               <button className="bg-gray-900 min-w-[300px] px-9 py-3 text-white">
                 checkout
               </button>
+              </Link>
             </div>
           </div>
         </>

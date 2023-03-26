@@ -7,6 +7,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 //redux
 import { useSelector } from "react-redux";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const NavBar = () => {
@@ -68,7 +69,7 @@ const totalProducts = useSelector((state) => state.cartTotalProducts);
         }
       >
         <div className="absolute  right-5 top-5">
-          <img src={Logo} alt="zani-stores" />
+          <LazyLoadImage src={Logo} alt="zani-stores" />
         </div>
 
         <ul className="mt-10">
@@ -120,7 +121,7 @@ const totalProducts = useSelector((state) => state.cartTotalProducts);
 
       <div className="flex px-auto">
         <Link to="/">
-          <img
+          <LazyLoadImage
             className={mainNavItems ? "hidden" : "block"}
             src={Logo}
             alt=""

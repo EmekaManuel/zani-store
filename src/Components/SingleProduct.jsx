@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Redux/cartSlice";
 import Reviews from "./Reviews";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -52,28 +53,28 @@ const SingleProduct = () => {
         <div className="md:w-1/2 ">
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 md:grid-cols-2 ">
             <div className="bg-white flex justify-center items-center ">
-              <img
+              <LazyLoadImage
                 src={product.image}
                 className="rounded-lg p-3 min-h-[200px] min-w-[200px] max-h-[350px]"
                 alt=""
               />
             </div>
             <div className="bg-white flex justify-center items-center  ">
-              <img
+              <LazyLoadImage
                 src={product.subImage1}
                 className=" flex p-3 justify-center items-center rounded-lg min-h-[200px] min-w-[200px]  max-h-[350px] "
                 alt=""
               />
             </div>
             <div className="bg-white flex justify-center items-center  ">
-              <img
+              <LazyLoadImage
                 src={product.subImage2}
                 className="rounded-lg p-3 min-h-[200px] min-w-[200px]  max-h-[350px] "
                 alt=""
               />
             </div>
             <div className="bg-white flex justify-center items-center ">
-              <img
+              <LazyLoadImage
                 src={product.subImage3}
                 className="rounded-lg p-3 min-h-[200px] min-w-[200px]  max-h-[350px]"
                 alt=""
