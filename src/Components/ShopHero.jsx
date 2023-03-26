@@ -102,7 +102,7 @@ const ShopHero = () => {
       {/* ///////////////// end of left nav ///////////////////// */}
 
       <div className="right w-4/5">
-        <div className="grid md:grid-cols-4 w-[100%] gap-5">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 w-[100%] gap-5">
           <ProductContainer filterData={currentView} />
         </div>
         <div className="grid w justify-center">

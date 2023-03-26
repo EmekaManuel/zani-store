@@ -25,9 +25,11 @@ const Hero = () => {
         </h1>
 
         <div className="flex mt-4 justify-center items-center mx-auto p-1 max-w-[700px] w-full">
+        <Link to = "/shop"> 
           <button className="shop-now px-[70px] py-3 bg-white text-black rounded hover:bg-gray-100">
-            <Link to = "/shop">   Shop Now</Link>
+             Shop Now
             </button>
+            </Link>
         </div>
       </div>
     </div>

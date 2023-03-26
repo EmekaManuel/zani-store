@@ -49,11 +49,7 @@ const CartComponent = () => {
                 <div className="pl-5 flex space-x-5 md:flex-row ">
                   <div className=" md:max-w-[200px] max-w-[50px] ">
                     {" "}
-                    <img
-                      src={cartItem.subImage2}
-                      className=""
-                      alt=""
-                    />{" "}
+                    <img src={cartItem.subImage2} className="" alt="" />{" "}
                   </div>
                   <div className="min-w-[270px] space-y-4 ">
                     <p className="text-2xl font-medium">{cartItem.name} </p>
@@ -61,8 +57,8 @@ const CartComponent = () => {
                     <div className="flex items-center w-2/3 justify-between">
                       <div className="flex flex-row  items-center">
                         <div className="text-md font-mono">color:</div>
-                        
-                        <div className='bg-gray-400 h-5 w-5' > </div>
+
+                        <div className="bg-gray-400 h-5 w-5"> </div>
                       </div>
                       <div className="text-md font-mono">size: 32</div>
                     </div>
@@ -100,23 +96,28 @@ const CartComponent = () => {
 
                 <div className="pr-5 justify-start ">
                   {" "}
-                  <Link    onClick={() => dispatch(removeItem(cartItem))}>
+                  <Link onClick={() => dispatch(removeItem(cartItem))}>
                     {" "}
-                    <AiOutlineDelete />{" "}
+                    <AiOutlineDelete className="text-red-800" />{" "}
                   </Link>{" "}
                 </div>
               </div>
             ))}
+            <div className="flex justify-center min-w-[200px] py-8 items-center">
+              <button onClick={() => dispatch(clearCart(cartItems))}
+
+              className="bg-white min-w-[300px] px-9 py-3 hover:bg-black hover:text-white border-black border text-black">
+                clear cart
+              </button>
+            </div>{" "}
           </>
         )}
       </div>
       {/* //last part */}
 
-      {cartItems.length > 0 && 
-                <>
-
-        
-            <div className="flex flex-col max-w-screen py-9 bg-gray-200 ">
+      {cartItems.length > 0 && (
+        <>
+          <div className="flex flex-col max-w-screen py-9 bg-gray-200 ">
             <div className="flex justify-center items-center">
               <p className="font-mono text-2xl">Payment Summary</p>
             </div>
@@ -125,9 +126,7 @@ const CartComponent = () => {
               <div className="flex items-center  py-6 justify-between">
                 <p className="pl-5 font-mono">subtotal</p>
                 <p className="pr-5"> {dollarUSlocale.format(totalAmount)} </p>
-                {
-                  console.log(totalAmount)
-                }
+                {console.log(totalAmount)}
               </div>
             </div>
             <div className="flex flex-col max-w-screen pb-5  mx-10">
@@ -139,11 +138,9 @@ const CartComponent = () => {
             <div className="flex flex-col max-w-screen pb-5  mx-10">
               <div className="flex items-center  py-6 justify-between">
                 <p className="pl-5 font-mono">total</p>
-                <p className="pr-5"> 
-                {dollarUSlocale.format(
-                          totalAmount + 50
-                        )}
-                 </p>
+                <p className="pr-5">
+                  {dollarUSlocale.format(totalAmount + 50)}
+                </p>
               </div>
             </div>
 
@@ -154,7 +151,7 @@ const CartComponent = () => {
             </div>
           </div>
         </>
-      }
+      )}
     </>
   );
 };

@@ -15,7 +15,7 @@ const ProductContainer = ({ filterData }) => {
           >
             <div>
               <div className="flex flex-col">
-                <div className="h-[350px] md:h-[270px]">
+                <div className="h-[350px] lg:h-[350px] md:h-[270px]">
                   <img
                     src={product.image}
                     alt=""
