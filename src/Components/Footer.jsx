@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="flex justify-center flex-col md:flex-row mx-5 mb-3 md:mb-0">
       {/******************** our story *****************/}
       <div className=" flex pl-5 flex-col text-left md:w-1/4 md:my-10">
-        <h1 className="text-[12px] text-2xl md:text-[25px] my-5">Our Story</h1>
+        <h1 className=" text-2xl md:text-[25px] my-5">Our Story</h1>
         <p className="md:text-[14px]">
           <p className="py-[7px]">
             Our origin story is more of an origin statement. We wanted to design
@@ -37,7 +37,7 @@ const Footer = () => {
       {/******************** online store *****************/}
 
       <div className=" flex pl-5 flex-col md:w-1/4 text-left md:my-10">
-        <h1 className="text-[12px] text-2xl md:text-[25px] my-5">
+        <h1 className=" text-2xl md:text-[25px] my-5">
           Online Store
         </h1>
         <ul className="md:text-[14px]">
@@ -116,7 +116,7 @@ const Footer = () => {
       {/******************** more info starts *****************/}
 
       <div className=" flex pl-5 flex-col md:w-1/4 text-left md:my-10">
-        <h1 className="text-[12px] text-2xl md:text-[25px] my-5">More Info</h1>
+        <h1 className=" text-2xl md:text-[25px] my-5">More Info</h1>
         <ul className="md:text-[14px]">
           <a href="">
             <p className="pb-[5px]">About</p>
@@ -183,7 +183,7 @@ const Footer = () => {
       {/******************** more info starts *****************/}
 
       <div className=" flex pl-5 flex-col md:w-1/4 text-left md:my-10">
-        <h1 className="text-[12px] text-2xl md:text-[25px] my-5">
+        <h1 className=" text-2xl md:text-[25px] my-5">
           Stay Up to Date
         </h1>
         <p className="md:text-[14px]">
