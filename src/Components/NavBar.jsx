@@ -76,14 +76,15 @@ const totalProducts = useSelector((state) => state.cartTotalProducts);
           <li className="border-b-2">
             <Link to="/shop">Shop</Link>
           </li>
-          <li className="border-b-2">brand</li>
-          <li className="border-b-2">saved</li>
-          <li className="border-b-2">bundles</li>
+          <li className="border-b-2"> <Link to = "/soon">brand</Link> </li>
+          <li className="border-b-2"><Link to = "/soon">saved</Link> </li>
+          <li className="border-b-2"> <Link to = "/soon">bundles</Link> </li>
 
           <div className="flex flex-col ">
             <button className=" p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded my-4">
-              account
-            </button>
+
+<Link to = '/login'> account
+</Link>            </button>
             <button className=" p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded">
               search
             </button>
@@ -107,15 +108,15 @@ const totalProducts = useSelector((state) => state.cartTotalProducts);
         </li>
         <li>
           {" "}
-          <Link to="/brand">Brand</Link>{" "}
+          <Link to="/soon">Brand</Link>{" "}
         </li>
         <li>
           {" "}
-          <Link to="/saved">Saved</Link>{" "}
+          <Link to="/soon">Saved</Link>{" "}
         </li>
         <li>
           {" "}
-          <Link to="/bundles">Bundles</Link>{" "}
+          <Link to="/soon">Bundles</Link>{" "}
         </li>
       </ul>
 

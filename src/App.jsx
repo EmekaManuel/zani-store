@@ -10,7 +10,7 @@ import Shop from "./Pages/Shop";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Checkout from "./Pages/Checkout";
 import SingleProduct from "./Components/SingleProduct";
-
+import ComingSoon from "./Pages/ComingSoon";
 function App() {
   return (
     <>
@@ -24,6 +24,7 @@ function App() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/soon" element={<ComingSoon />} />
           
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:id" element={<SingleProduct/>} />
